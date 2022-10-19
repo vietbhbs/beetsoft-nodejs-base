@@ -1,0 +1,38 @@
+import mongoose from 'mongoose';
+interface Post {
+    uuid?: string;
+    language?: string;
+    commentStatus: string;
+    status: number;
+    type: number;
+    isHot: number;
+    showTop: number;
+    categoryId: string;
+    topicId: number;
+    authorId: number;
+    name: string;
+    slugs: string;
+    photo?: string;
+    thumb?: string;
+    photoData?: string;
+    fileListen?: string;
+    summary?: string;
+    content?: string;
+    title?: string;
+    description?: string;
+    tags?: string;
+    source?: string;
+    viewed?: string;
+    viewTotal: number;
+    viewDay: number;
+    viewWeek: number;
+    viewMonth: number;
+    viewYear: number;
+    releaseTime?: any;
+    outdatedAt?: any;
+    note?: any;
+    slideView: boolean;
+}
+declare const Post: mongoose.Schema<Post, mongoose.Model<Post, any, any, any, any>, {}, {}, {}, {}, "type", Post>;
+export declare const postModel: mongoose.Model<Post, {}, {}, {}, mongoose.Schema<Post, mongoose.Model<Post, any, any, any, any>, {}, {}, {}, {}, "type", Post>>;
+export {};

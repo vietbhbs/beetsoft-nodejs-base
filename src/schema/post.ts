@@ -1,0 +1,39 @@
+export const typePost = `
+    type Post{
+        id: String
+        uuid: String
+        language: String
+        commentStatus: String
+        status: Int
+        type: Int
+        isHot: Int
+        showTop: Int
+        categoryId: Int
+        topicId: Int
+        authorId: Int
+        name: String
+        slugs: String
+        photo: String
+        thumb: String
+        photoData: String
+        fileListen: String
+        summary: String
+        content: String
+        title: String
+        description: String
+        tags: String
+        source: String
+        viewed: String
+        viewTotal: Int
+        viewDay: Int
+        viewWeek: Int
+        viewMonth: Int
+        viewYear: Int
+        releaseTime: String
+        outdatedAt: String
+        createdAt: String
+        note: String
+        slideView: String
+        category: Category
+    }
+`
